@@ -15,10 +15,3 @@ connectDB()
     });
   })
   .catch((err) => console.error(`Failed to connect: error: ${err}`));
-
-//! middlewares
-
-//! Routes
-app.get('/', (req, res) => {
-  res.send('<h2> Hello from Home!!!</h2>');
-});
