@@ -55,7 +55,7 @@ export const registerUser = asyncHandler(
       email,
       password, // password hashing is already handled via 'save' event
       fullName,
-      userName,
+      userName: userName.toLowerCase(),
       avatar: avatar.url,
       coverImage: coverImage?.url || ''
     };
